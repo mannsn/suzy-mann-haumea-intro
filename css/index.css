@@ -1,0 +1,68 @@
+    
+:root {       
+      
+    /* CSS HEX */
+    --ash-gray: #ccdad1ff;
+    --ash-gray-2: #9caea9ff;
+    --battleship-gray: #788585ff;
+    --dim-gray: #6f6866ff;
+    --van-dyke: #38302eff;
+    --textdark: #001845
+
+
+
+ }
+
+ .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+
+body{    
+    background-color:var(--ash-gray);
+    color:var(--textdark);
+    font-family:'Bitter', serif;
+    font-size: 24px;  
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom:25px;
+
+    
+
+    
+}
+
+a {
+    color: hotpink;
+  }
+
+h1 {
+    text-align:center
+
+}
+
+h2 {
+    text-align:left
+
+}
+
+li {
+    list-style-type: square;
+  }
+
+#name{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#profile-picture{
+    align-content: center;
+
+}
+#about{
+    text-align: left;
+}
+#about-content{
+    text-align:center;
+}
