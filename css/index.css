@@ -1,112 +1,116 @@
-    
-:root {      
-      
-    /* CSS HEX */
-    --ash-gray: #ccdad1ff;
-    --ash-gray-2: #9caea9ff;
-    --battleship-gray: #788585ff;
-    --dim-gray: #6f6866ff;
-    --van-dyke: #38302eff;
-    --textdark: #001845
- }
-
- .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-  }
-  .experience-container {
-    display:flex;
-    justify-content:space-around;
-    gap: 10px;
-    flex-flow:row wrap;
-
-  }
-  .title-container {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    gap: 10px;
-
-  }  
-  .date-container {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    gap: 10px;
-
-  }
-  .para-container {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    gap: 10px;
-
-  }
-  .other-container {
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    gap: 10px;
-  }
-  #navigation ul {
-    display:flex;
-    gap: 4em;
-    padding-bottom:0;
-    list-style:none;
-  }
-  #navigation {
-    position:fixed;
-    top:0;
-    background-color:var(--ash-gray);
-  }
-  a:hover {
-    opacity: 0.3;
-  }
-  #name{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+:root {
+  /* CSS HEX */
+  --ash-gray: #ccdad1ff;
+  --ash-gray-2: #9caea9ff;
+  --battleship-gray: #788585ff;
+  --dim-gray: #6f6866ff;
+  --van-dyke: #38302eff;
+  --textdark: #001845;
 }
 
-#profile-picture{
-    align-content: center;
-
-}
-#about{
-    text-align: left;
-}
-#about-content{
-    text-align:left;
+body {
+  background-color: var(--ash-gray);
+  color: var(--textdark);
+  font-family: "Bitter", serif;
+  font-size: 24px;
+  padding: 100px;
 }
 
-
-
-body{    
-    background-color:var(--ash-gray);
-    color:var(--textdark);
-    font-family:'Bitter', serif;
-    font-size: 24px;  
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom:25px;
+h1,
+h2,
+p,
+a,
+div {
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 a {
-    color:hotpink
-  }
+  color: hotpink;
+}
+a:hover {
+  opacity: 0.3;
+}
 
 h1 {
-    text-align:center
-
+  text-align: center;
 }
 
 h2 {
-    text-align:left
-
+  text-align: left;
 }
 
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40%;
+  height: auto;
+}
 
+#linkedinlogo,
+instagramlogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 25%;
+  height: auto;
+}
 
+#navigation {
+  position: fixed;
+  top: 0;
+  background-color: var(--ash-gray);
+}
 
+#navigation ul {
+  display: flex;
+  gap: 4em;
+  list-style: none;
+}
 
+#name {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#about {
+  text-align: left;
+}
+#about-content {
+  text-align: left;
+  min-width: 50%;
+}
+.about-container{
+  max-width: 100%;
+  outline-style:solid;
+}
+.experience-container {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  outline-style: solid;
+}
+.title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.date-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.para-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.connect-container {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
