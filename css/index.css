@@ -1,112 +1,183 @@
-    
-:root {      
-      
-    /* CSS HEX */
-    --ash-gray: #ccdad1ff;
-    --ash-gray-2: #9caea9ff;
-    --battleship-gray: #788585ff;
-    --dim-gray: #6f6866ff;
-    --van-dyke: #38302eff;
-    --textdark: #001845
- }
-
- .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-  }
-  .experience-container {
-    display:flex;
-    justify-content:space-around;
-    gap: 10px;
-    flex-flow:row wrap;
-
-  }
-  .title-container {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    gap: 10px;
-
-  }  
-  .date-container {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    gap: 10px;
-
-  }
-  .para-container {
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    gap: 10px;
-
-  }
-  .other-container {
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    gap: 10px;
-  }
-  #navigation ul {
-    display:flex;
-    gap: 4em;
-    padding-bottom:0;
-    list-style:none;
-  }
-  #navigation {
-    position:fixed;
-    top:0;
-    background-color:var(--ash-gray);
-  }
-  a:hover {
-    opacity: 0.3;
-  }
-  #name{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+:root {
+  /* CSS HEX */
+  --ash-gray: #ccdad1ff;
+  --ash-gray-2: #9caea9ff;
+  --battleship-gray: #788585ff;
+  --dim-gray: #6f6866ff;
+  --van-dyke: #38302eff;
+  --textdark: #001845;
 }
 
-#profile-picture{
-    align-content: center;
-
-}
-#about{
-    text-align: left;
-}
-#about-content{
-    text-align:left;
+body {
+  background-color: var(--ash-gray);
+  color: var(--textdark);
+  font-family: "Bitter", serif;
+  font-size:2vw;
+  padding: 10%;
 }
 
+/* Larger screens (laptops and desktops) */
+@media (min-width: 1025px) {
+ body{background-color: var(--battleship-gray);}
 
+}
 
-body{    
-    background-color:var(--ash-gray);
-    color:var(--textdark);
-    font-family:'Bitter', serif;
-    font-size: 24px;  
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom:25px;
+/* High-resolution screens (hi-res laptops and desktops) */
+@media (min-width: 1281px) {
+  body{background-color: var(--ash-gray);}
+  
+}
+
+h1,
+h2,
+p,
+a,
+div {
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding:1%;
 }
 
 a {
-    color:hotpink
+  color: hotpink;
+}
+
+/* Larger screens (laptops and desktops) */
+@media (min-width: 1025px) {
+  a {
+    color: hotpink;
   }
+ 
+ }
+ 
+ /* High-resolution screens (hi-res laptops and desktops) */
+ @media (min-width: 1281px) {
+  a {
+    color:aqua;
+  }
+   
+ }
+
+a:hover {
+  opacity: 0.3;
+}
 
 h1 {
-    text-align:center
-
+  text-align:center;
+  color:blueviolet;
 }
 
 h2 {
-    text-align:left
+  text-align: left;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
+#profile-picture{
+  border-radius: 10%;
+  max-width: 20%;
+  background-size: contain;
+}
+
+#linkedinlogo
+{
+  display: block;
+  max-width: 75%;
+  height: auto;
+}
 
 
+#instagramlogo {
+  display: block;
+  max-width:75%;
+  height: auto;
+}
 
+#navigation {
+  position: fixed;
+  top: 0;
+  background-color: var(--ash-gray);
+}
+/* Larger screens (laptops and desktops) */
+@media (min-width: 1025px) {
+  #navigation{background-color: var(--battleship-gray);}
+ 
+ }
+ 
+ /* High-resolution screens (hi-res laptops and desktops) */
+ @media (min-width: 1281px) {
+   #navigation{background-color: var(--ash-gray);}
+   
+ }
 
+#navigation ul {
+  display: flex;
+  gap: 4em;
+  list-style: none;
+}
 
+#name {
+  font-family: "Dancing Script", cursive;
+}
+
+/* Larger screens (laptops and desktops) */
+@media (min-width: 1025px) {
+  #name {
+    font-family: "Dancing Script", cursive;
+  }  
+ 
+ }
+ 
+ /* High-resolution screens (hi-res laptops and desktops) */
+ @media (min-width: 1281px) {
+  #name {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+   
+ }
+
+#about {
+  text-align: left;
+}
+#about-content {
+  text-align: left;
+  min-width: 50%;
+}
+.about-container{
+  max-width: 100%;
+  outline-style:solid;
+}
+.experience-container {
+  display:grid;
+  grid-template-columns: repeat();
+  gap:2%;
+
+}
+
+.ex-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-style: solid;
+}
+
+.ex-part{
+  display: flex;
+  flex-direction: column;
+}
+
+.connect-container {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items:flex-start;
+
+  
+}
