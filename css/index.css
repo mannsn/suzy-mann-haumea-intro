@@ -12,8 +12,20 @@ body {
   background-color: var(--ash-gray);
   color: var(--textdark);
   font-family: "Bitter", serif;
-  font-size:15vw
+  font-size:2vw;
   padding: 10%;
+}
+
+/* Larger screens (laptops and desktops) */
+@media (min-width: 1025px) {
+ body{background-color: var(--battleship-gray);}
+
+}
+
+/* High-resolution screens (hi-res laptops and desktops) */
+@media (min-width: 1281px) {
+  body{background-color: var(--ash-gray);}
+  
 }
 
 h1,
@@ -23,17 +35,36 @@ a,
 div {
   margin-top: 0;
   margin-bottom: 1em;
+  padding:1%;
 }
 
 a {
   color: hotpink;
 }
+
+/* Larger screens (laptops and desktops) */
+@media (min-width: 1025px) {
+  a {
+    color: hotpink;
+  }
+ 
+ }
+ 
+ /* High-resolution screens (hi-res laptops and desktops) */
+ @media (min-width: 1281px) {
+  a {
+    color:aqua;
+  }
+   
+ }
+
 a:hover {
   opacity: 0.3;
 }
 
 h1 {
-  text-align: center;
+  text-align:center;
+  color:blueviolet;
 }
 
 h2 {
@@ -48,7 +79,7 @@ img {
 }
 
 #profile-picture{
-  border-radius: 40%;
+  border-radius: 10%;
   max-width: 20%;
   background-size: contain;
 }
@@ -72,6 +103,17 @@ img {
   top: 0;
   background-color: var(--ash-gray);
 }
+/* Larger screens (laptops and desktops) */
+@media (min-width: 1025px) {
+  #navigation{background-color: var(--battleship-gray);}
+ 
+ }
+ 
+ /* High-resolution screens (hi-res laptops and desktops) */
+ @media (min-width: 1281px) {
+   #navigation{background-color: var(--ash-gray);}
+   
+ }
 
 #navigation ul {
   display: flex;
@@ -80,8 +122,26 @@ img {
 }
 
 #name {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Dancing Script", cursive;
 }
+
+/* Larger screens (laptops and desktops) */
+@media (min-width: 1025px) {
+  #name {
+    font-family: "Dancing Script", cursive;
+  }  
+ 
+ }
+ 
+ /* High-resolution screens (hi-res laptops and desktops) */
+ @media (min-width: 1281px) {
+  #name {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+   
+ }
+
 #about {
   text-align: left;
 }
@@ -94,27 +154,22 @@ img {
   outline-style:solid;
 }
 .experience-container {
-  display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap;
-  outline-style: solid;
-}
-.title-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display:grid;
+  grid-template-columns: repeat();
+  gap:2%;
+
 }
 
-.date-container {
+.ex-item {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
+  border-style: solid;
 }
 
-.para-container {
+.ex-part{
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .connect-container {
