@@ -11,28 +11,30 @@
 .quicksand-cdt {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
-  font-weight:100;
+  font-weight: 100;
   font-style: normal;
 }
 
 body {
   background-color: var(--ash-gray);
   color: var(--textdark);
-  font-family:"Quicksand";
-  font-size:2vw;
+  font-family: "Quicksand";
+  font-size: 2vw;
   padding: 10%;
 }
 
 /* Larger screens (laptops and desktops) */
 @media (min-width: 1025px) {
- body{background-color: var(--battleship-gray);}
-
+  body {
+    background-color: var(--battleship-gray);
+  }
 }
 
 /* High-resolution screens (hi-res laptops and desktops) */
 @media (min-width: 1281px) {
-  body{background-color: var(--ash-gray);}
-  
+  body {
+    background-color: var(--ash-gray);
+  }
 }
 
 h1,
@@ -42,7 +44,7 @@ a,
 div {
   margin-top: 0;
   margin-bottom: 1em;
-  padding:1%;
+  padding: 1%;
 }
 
 a {
@@ -54,24 +56,22 @@ a {
   a {
     color: hotpink;
   }
- 
- }
- 
- /* High-resolution screens (hi-res laptops and desktops) */
- @media (min-width: 1281px) {
+}
+
+/* High-resolution screens (hi-res laptops and desktops) */
+@media (min-width: 1281px) {
   a {
-    color:aqua;
+    color: aqua;
   }
-   
- }
+}
 
 a:hover {
   opacity: 0.3;
 }
 
 h1 {
-  text-align:center;
-  color:blueviolet;
+  text-align: center;
+  color: blueviolet;
 }
 
 h2 {
@@ -82,26 +82,23 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
 
-#profile-picture{
+#profile-picture {
   border-radius: 10%;
   max-width: 20%;
   background-size: contain;
 }
 
-#linkedinlogo
-{
+#linkedinlogo {
   display: block;
   max-width: 75%;
   height: auto;
 }
 
-
 #instagramlogo {
   display: block;
-  max-width:75%;
+  max-width: 75%;
   height: auto;
 }
 
@@ -112,15 +109,17 @@ img {
 }
 /* Larger screens (laptops and desktops) */
 @media (min-width: 1025px) {
-  #navigation{background-color: var(--battleship-gray);}
- 
- }
- 
- /* High-resolution screens (hi-res laptops and desktops) */
- @media (min-width: 1281px) {
-   #navigation{background-color: var(--ash-gray);}
-   
- }
+  #navigation {
+    background-color: var(--battleship-gray);
+  }
+}
+
+/* High-resolution screens (hi-res laptops and desktops) */
+@media (min-width: 1281px) {
+  #navigation {
+    background-color: var(--ash-gray);
+  }
+}
 
 #navigation ul {
   display: flex;
@@ -132,23 +131,6 @@ img {
   font-family: "Dancing Script", cursive;
 }
 
-/* Larger screens (laptops and desktops) */
-@media (min-width: 1025px) {
-  #name {
-    font-family: "Dancing Script", cursive;
-  }  
- 
- }
- 
- /* High-resolution screens (hi-res laptops and desktops) */
- @media (min-width: 1281px) {
-  #name {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  
-   
- }
-
 #about {
   text-align: left;
 }
@@ -156,15 +138,14 @@ img {
   text-align: left;
   min-width: 50%;
 }
-.about-container{
+.about-container {
   max-width: 100%;
-  outline-style:solid;
+  outline-style: solid;
 }
 .experience-container {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat();
-  gap:2%;
-
+  gap: 2%;
 }
 
 .ex-item {
@@ -174,7 +155,7 @@ img {
   border-style: solid;
 }
 
-.ex-part{
+.ex-part {
   display: flex;
   flex-direction: column;
 }
@@ -184,7 +165,25 @@ img {
   flex: 1 0 auto;
   flex-direction: row;
   justify-content: center;
-  align-items:flex-start;
+  align-items: flex-start;
+}
 
-  
+/* Larger screens (laptops and desktops) */
+@media (min-width: 1025px) {
+  #navigation {
+    background-color: var(--battleship-gray);
+  }
+  #name {
+    font-family: "Dancing Script", cursive;
+  }
+}
+
+/* High-resolution screens (hi-res laptops and desktops) */
+@media (min-width: 1281px) {
+  #navigation {
+    background-color: var(--ash-gray);
+  }
+  #name {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
 }
