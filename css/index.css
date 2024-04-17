@@ -23,20 +23,6 @@ body {
   padding: 10%;
 }
 
-/* Larger screens (laptops and desktops) */
-@media (min-width: 1025px) {
-  body {
-    background-color: var(--battleship-gray);
-  }
-}
-
-/* High-resolution screens (hi-res laptops and desktops) */
-@media (min-width: 1281px) {
-  body {
-    background-color: var(--ash-gray);
-  }
-}
-
 h1,
 h2,
 p,
@@ -49,20 +35,6 @@ div {
 
 a {
   color: hotpink;
-}
-
-/* Larger screens (laptops and desktops) */
-@media (min-width: 1025px) {
-  a {
-    color: hotpink;
-  }
-}
-
-/* High-resolution screens (hi-res laptops and desktops) */
-@media (min-width: 1281px) {
-  a {
-    color: aqua;
-  }
 }
 
 a:hover {
@@ -106,19 +78,6 @@ img {
   position: fixed;
   top: 0;
   background-color: var(--ash-gray);
-}
-/* Larger screens (laptops and desktops) */
-@media (min-width: 1025px) {
-  #navigation {
-    background-color: var(--battleship-gray);
-  }
-}
-
-/* High-resolution screens (hi-res laptops and desktops) */
-@media (min-width: 1281px) {
-  #navigation {
-    background-color: var(--ash-gray);
-  }
 }
 
 #navigation ul {
@@ -170,6 +129,12 @@ img {
 
 /* Larger screens (laptops and desktops) */
 @media (min-width: 1025px) {
+  body {
+    background-color: var(--battleship-gray);
+  }
+  a {
+    color: hotpink;
+  }
   #navigation {
     background-color: var(--battleship-gray);
   }
@@ -180,6 +145,12 @@ img {
 
 /* High-resolution screens (hi-res laptops and desktops) */
 @media (min-width: 1281px) {
+  body {
+    background-color: var(--ash-gray);
+  }
+  a {
+    color:coral;
+  }
   #navigation {
     background-color: var(--ash-gray);
   }
