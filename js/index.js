@@ -30,7 +30,7 @@ const skills =["Agile", "Software Architecture", "Software Estimation", "Model B
 console.log(skills);
 
 //Find the skills section and unordered list
-const skillsSection = document.getElementById("skills-section");
+const skillsSection = document.querySelector("#skills-section");
 console.log(skillsSection);
 var skillsList = document.getElementById("skills-list");
 console.log(skillsList);
