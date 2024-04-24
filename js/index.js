@@ -30,9 +30,9 @@ const skills =["Agile", "Software Architecture", "Software Estimation", "Model B
 console.log(skills);
 
 //Find the skills section and unordered list
-const skillsSection = document.querySelector("#skills-section");
+const skillsSection = document.getElementById("skills-section");
 console.log(skillsSection);
-var skillsList = document.getElementById("skills-list");
+const skillsList = skillsSection.getElementsByTagName("ul");
 console.log(skillsList);
 
 for (let i = 0; i< skills.length; i++)
@@ -40,7 +40,7 @@ for (let i = 0; i< skills.length; i++)
     var skill = document.createElement("LI");
     skill.innerText = skills[i];
     console.log(skill);
-    skillsList.appendChild(skill);
+    skillsList[0].appendChild(skill);
     console.log(skillsList);
 
 }
