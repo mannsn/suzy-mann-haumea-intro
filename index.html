@@ -109,6 +109,26 @@
         </div>
       </div>
     </div>
+
+    <section>
+      <h2>Leave a Message</h2>
+      <form id= "messageForm" name="leave_message" autocomplete="on">
+        <label for="usersNameId">Users Name:</label>
+        <input type="text" name="usersName" id="usersNameId" required="true"><br>
+        <label for="emailId">Email: </label>
+        <input type="text" name="email" id="emailId" required="true" autocomplete="on"><br>
+        <label for="usersMessageId">Users Message: </label>
+        <input type="text" name="usersMessage" id="usersMessageId" required="true"><br>
+        <button type="submit" class="button" name=""submit_button">Submit</button>
+      </form>
+    </section>
+
+    <section id="messages">
+      <h2>Messages</h2>
+      <ul></ul>
+    </section>
+
+
     <script src="js/index.js"></script>
   </body>
 </html>
