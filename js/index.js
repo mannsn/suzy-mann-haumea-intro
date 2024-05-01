@@ -101,5 +101,7 @@ function onFormSubmit(event) {
 
 //Find the leave messages form and add the callback for submit
 const messageForms = document.getElementsByName("leave_message");
+console.log(messageForms);
 const messageForm = messageForms[0];
+console.log(messageForm);
 messageForm.addEventListener("submit", onFormSubmit);

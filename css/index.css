@@ -20,7 +20,7 @@ body {
   color: var(--textdark);
   font-family: "Quicksand";
   font-size: 3vw;
-  padding: 10%;
+  padding: 15%;
 }
 
 h1,
@@ -70,6 +70,8 @@ button {
   max-width: 70%;
   border-radius: 60%;
   margin-left: 10%;
+  font-family: "Quicksand";
+  font-size: 3vw;
 }
 
 button:hover {
@@ -78,6 +80,14 @@ button:hover {
 
 ul {
   list-style-type: none;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 2vw;
 }
 
 #profile-picture {
