@@ -43,6 +43,14 @@ function onRemoveButton(event) {
   console.log("Remove");
   const entry = event.target.parentNode;
   entry.remove();
+
+  const messageSection = document.getElementById("messages");
+  const messageList = messageSection.getElementsByTagName("li");
+  console.log(messageList);
+  console.log (messageList.length);
+  if (messageList.length === 0) {
+    messageSection.hidden = true;
+  }
 }
 
 //Callback for submit
