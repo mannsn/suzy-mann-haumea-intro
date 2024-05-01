@@ -27,6 +27,9 @@ h1,
 h2,
 p,
 a,
+section,
+li,
+ul,
 div {
   margin-top: 0;
   margin-bottom: 1em;
@@ -58,21 +61,26 @@ img {
 
 button {
   border: none;
-  background-color:hotpink;
-  color:#001845;
+  display: inline-block;
+  background-color: hotpink;
+  color: #001845;
   font-weight: bold;
   text-align: center;
-  display: block;
-  font-size: 24px;
+  display:block;
   max-width: 50%;
-  align-self: center;
   border-radius: 60%;
+  margin-left: 10%;
+  
+
 }
 
 button:hover {
   opacity: 0.3;
 }
 
+ul{
+list-style-type: none;
+}
 
 #profile-picture {
   border-radius: 10%;
@@ -144,11 +152,25 @@ button:hover {
   justify-content: center;
   align-items: flex-start;
 }
-#messageForm{
-  display:flex;
+
+.message-container {
+  display: block;
+  align-items: center;
+  background-color:white;
+ 
+}
+.button{
+  align-self: center;
+}
+
+#messageForm {
+  display: flex;
   justify-content: center;
   flex-direction: column;
 }
+#removeButtonId{
+  display:inline-block;
+  align-self:flex-end;
 
 
 /* Larger screens (laptops and desktops) */
@@ -173,7 +195,7 @@ button:hover {
     background-color: var(--ash-gray);
   }
   a {
-    color:coral;
+    color: coral;
   }
   #navigation {
     background-color: var(--ash-gray);

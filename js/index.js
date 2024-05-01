@@ -3,12 +3,10 @@ const aFooter = document.createElement("FOOTER");
 aFooter.className = "footer";
 aFooter.setAttribute("id", "myfooter");
 document.body.appendChild(aFooter);
-console.log(aFooter);
 
 //Get the current year
 var today = new Date();
 var thisYear = today.getFullYear();
-console.log(thisYear);
 
 //Find the added footer element
 var newFooter = document.querySelector("footer");
@@ -19,11 +17,9 @@ var aCopyright = document.createElement("P");
 const copyrightSymbol = "\u00A9";
 var copyrightText = copyrightSymbol + "Suzy Mann " + thisYear;
 aCopyright.innerHTML = copyrightText;
-console.log(aCopyright);
 
 //Append copyright to footer
 newFooter.appendChild(aCopyright);
-console.log(newFooter);
 
 //Skills section - List of technical skills
 const skills = [
@@ -32,28 +28,21 @@ const skills = [
   "Software Estimation",
   "Model Based Engineering",
 ];
-console.log(skills);
-
 //Find the skills section and unordered list
 const skillsSection = document.getElementById("skills-section");
-console.log(skillsSection);
 const skillsList = skillsSection.getElementsByTagName("ul");
-console.log(skillsList);
 
 //Create the skills list
 for (let i = 0; i < skills.length; i++) {
   var skill = document.createElement("LI");
   skill.innerText = skills[i];
-  console.log(skill);
   skillsList[0].appendChild(skill);
-  console.log(skillsList);
 }
 //Callback for remove button
 function onRemoveButton(event) {
-    console.log("Remove");
-    const entry = event.target.parentNode;
-    entry.remove();
-    
+  console.log("Remove");
+  const entry = event.target.parentNode;
+  entry.remove();
 }
 
 //Callback for submit
@@ -74,23 +63,26 @@ function onFormSubmit(event) {
   const messageSection = document.getElementById("messages");
   const messageList = messageSection.getElementsByTagName("ul");
   console.log(messageList);
-  const newMessage = document.createElement("LI");
-  emailString = `<a href="mailto:${email}">${userName}</a>\n`;
-  spanString = `<span>${usersMessage}</span>`;
-  console.log(emailString + spanString);
 
-  newMessage.innerHTML = emailString + spanString;
-  messageList[0].appendChild(newMessage);
+  const newMessage = document.createElement("LI");
+  newString = `<a href="mailto:${email}">${userName}</a>\n 
+  <span>${usersMessage} </span>`;
+  console.log(newString);
+  newMessage.innerHTML = newString;
 
   //Add a remove button
   const removeButton = document.createElement("BUTTON");
   removeButton.innerText = "Remove";
   removeButton.setAttribute("type", "button");
-  removeButton.setAttribute("id","removeButtonId");
+  removeButton.setAttribute("id", "removeButtonId");
   removeButton.addEventListener("click", onRemoveButton);
   console.log(removeButton);
-  messageList[0].appendChild(removeButton);
-  
+
+  //Add remove button
+  newMessage.appendChild(removeButton);
+
+  //Add message
+  messageList[0].appendChild(newMessage);
 
   //Reset the form
   event.target.reset();
