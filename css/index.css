@@ -62,24 +62,22 @@ img {
 button {
   border: none;
   display: inline-block;
-  background-color:cadetblue;
+  background-color: cadetblue;
   color: #001845;
   font-weight: bold;
   text-align: center;
-  display:block;
+  display: block;
   max-width: 70%;
   border-radius: 60%;
   margin-left: 10%;
-  
-
 }
 
 button:hover {
   opacity: 0.3;
 }
 
-ul{
-list-style-type: none;
+ul {
+  list-style-type: none;
 }
 
 #profile-picture {
@@ -156,11 +154,10 @@ list-style-type: none;
 .message-container {
   display: block;
   align-items: center;
-  background-color:white;
+  background-color: white;
   border-style: solid;
- 
 }
-.button{
+.button {
   align-self: center;
 }
 
@@ -168,41 +165,41 @@ list-style-type: none;
   display: flex;
   justify-content: center;
   flex-direction: column;
- }
- 
-#removeButtonId{
-  display:inline-block;
-  align-self:flex-end;
-
-
-/* Larger screens (laptops and desktops) */
-@media (min-width: 1025px) {
-  body {
-    background-color: var(--battleship-gray);
-  }
-  a {
-    color: hotpink;
-  }
-  #navigation {
-    background-color: var(--battleship-gray);
-  }
-  #name {
-    font-family: "Dancing Script", cursive;
-  }
 }
 
-/* High-resolution screens (hi-res laptops and desktops) */
-@media (min-width: 1281px) {
-  body {
-    background-color: var(--ash-gray);
+#removeButtonId {
+  display: inline-block;
+  align-self: flex-end;
+
+  /* Larger screens (laptops and desktops) */
+  @media (min-width: 1025px) {
+    body {
+      background-color: var(--battleship-gray);
+    }
+    a {
+      color: hotpink;
+    }
+    #navigation {
+      background-color: var(--battleship-gray);
+    }
+    #name {
+      font-family: "Dancing Script", cursive;
+    }
   }
-  a {
-    color: coral;
-  }
-  #navigation {
-    background-color: var(--ash-gray);
-  }
-  #name {
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  /* High-resolution screens (hi-res laptops and desktops) */
+  @media (min-width: 1281px) {
+    body {
+      background-color: var(--ash-gray);
+    }
+    a {
+      color: coral;
+    }
+    #navigation {
+      background-color: var(--ash-gray);
+    }
+    #name {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
   }
 }
