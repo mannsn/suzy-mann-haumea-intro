@@ -19,7 +19,7 @@ body {
   background-color: var(--ash-gray);
   color: var(--textdark);
   font-family: "Quicksand";
-  font-size: 2vw;
+  font-size: 3vw;
   padding: 10%;
 }
 
@@ -62,12 +62,12 @@ img {
 button {
   border: none;
   display: inline-block;
-  background-color: hotpink;
+  background-color:cadetblue;
   color: #001845;
   font-weight: bold;
   text-align: center;
   display:block;
-  max-width: 50%;
+  max-width: 70%;
   border-radius: 60%;
   margin-left: 10%;
   
@@ -157,6 +157,7 @@ list-style-type: none;
   display: block;
   align-items: center;
   background-color:white;
+  border-style: solid;
  
 }
 .button{
@@ -167,7 +168,8 @@ list-style-type: none;
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
+ }
+ 
 #removeButtonId{
   display:inline-block;
   align-self:flex-end;

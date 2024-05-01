@@ -47,7 +47,7 @@ function onRemoveButton(event) {
   const messageSection = document.getElementById("messages");
   const messageList = messageSection.getElementsByTagName("li");
   console.log(messageList);
-  console.log (messageList.length);
+  console.log(messageList.length);
   if (messageList.length === 0) {
     messageSection.hidden = true;
   }
@@ -71,6 +71,9 @@ function onFormSubmit(event) {
   const messageSection = document.getElementById("messages");
   const messageList = messageSection.getElementsByTagName("ul");
   console.log(messageList);
+
+  //Display the message section
+  messageSection.hidden = false;
 
   const newMessage = document.createElement("LI");
   newString = `<a href="mailto:${email}">${userName}</a>\n 
