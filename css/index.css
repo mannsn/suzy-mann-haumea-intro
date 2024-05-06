@@ -180,6 +180,7 @@ input[type="text"] {
 #removeButtonId {
   display: inline-block;
   align-self: flex-end;
+}
 
   /* Larger screens (laptops and desktops) */
   @media (min-width: 1025px) {
@@ -212,4 +213,4 @@ input[type="text"] {
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     }
   }
-}
+
