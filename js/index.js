@@ -106,3 +106,30 @@ console.log(messageForms);
 const messageForm = messageForms[0];
 console.log(messageForm);
 messageForm.addEventListener("submit", onFormSubmit);
+
+
+fetch("https://api.github.com/users/mannsn/repos",{per_page:50})
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Request failed");
+    }
+    return response.json(); // Parse the response as JSON
+  })
+  .then((data) => {
+    repositories = [...data];
+    console.log (repositories);
+    console.log(repositories); // Do something with the data
+    const projectSection = document.getElementById("projects-section");
+    const projectList = projectSection.getElementsByTagName("UL");
+   
+    //Create the respositories list
+    for (let i = 0; i < repositories.length; i++) {
+      var project = document.createElement("LI");
+      project.innerText = repositories[i].name;
+      console.log(project);
+      projectList[0].appendChild(project);
+    }
+  })
+  .catch((error) => {
+    console.error("An error occurred:", error);
+  });
