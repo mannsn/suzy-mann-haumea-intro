@@ -107,25 +107,30 @@ const messageForm = messageForms[0];
 console.log(messageForm);
 messageForm.addEventListener("submit", onFormSubmit);
 
+//Get the repositories from github
+fetch("https://api.github.com/users/mannsn/repos")
 
-fetch("https://api.github.com/users/mannsn/repos",{per_page:50})
+   //Get the response
   .then((response) => {
     if (!response.ok) {
       throw new Error("Request failed");
     }
     return response.json(); // Parse the response as JSON
   })
+
+  //Get the data and add it to the html
   .then((data) => {
     repositories = [...data];
     console.log (repositories);
-    console.log(repositories); // Do something with the data
+
+    //Find the project section and ul
     const projectSection = document.getElementById("projects-section");
     const projectList = projectSection.getElementsByTagName("UL");
    
-    //Create the respositories list
+    //Create the respositories list by adding it to the html
     for (let i = 0; i < repositories.length; i++) {
       var project = document.createElement("LI");
-      project.innerText = repositories[i].name;
+      project.innerText = repositories[i].html_url;
       console.log(project);
       projectList[0].appendChild(project);
     }
