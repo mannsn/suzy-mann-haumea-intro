@@ -105,8 +105,8 @@ const messageForms = document.getElementsByName("leave_message");
 console.log(messageForms);
 const messageForm = messageForms[0];
 console.log(messageForm);
-messageForm.addEventListener("submit", onFormSubmit);
 
+messageForm.addEventListener("submit", onFormSubmit);
 //Get the repositories from github
 fetch("https://api.github.com/users/mannsn/repos")
 
