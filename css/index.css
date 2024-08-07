@@ -1,88 +1,113 @@
-    
-:root {      
-      
-    /* CSS HEX */
-    --ash-gray: #ccdad1ff;
-    --ash-gray-2: #9caea9ff;
-    --battleship-gray: #788585ff;
-    --dim-gray: #6f6866ff;
-    --van-dyke: #38302eff;
-    --textdark: #001845
+:root {
+  /* CSS HEX */
+  --ash-gray: #ccdad1ff;
+  --ash-gray-2: #9caea9ff;
+  --battleship-gray: #788585ff;
+  --dim-gray: #6f6866ff;
+  --van-dyke: #38302eff;
+  --textdark: #001845;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#about {
+  scroll-margin-top: 8em;
+}
+#experience {
+  scroll-margin-top: 3em;
+}
+
+#skills {
+  scroll-margin-top: 3em;
+}
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  border: #38302eff;
  }
 
- .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-  }
-  .experience-container {
-    display: flex;
-    flex-direction:column;
-  }
-  .other-container {
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    gap: 10px;
-  }
-  #navigation ul {
-    display:flex;
-    gap: 4em;
-    padding-bottom:0;
-    list-style:none;
-  }
-  #navigation {
-    position:fixed;
-    top:0;
-    background-color:var(--ash-gray);
-  }
-  a:hover {
-    opacity: 0.3;
-  }
-  #name{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+.experience-container div {
+  background-color: rgb(203, 171, 203);
+  border-style: solid;
+  border-color: cadetblue;
 }
 
-#profile-picture{
-    align-content: center;
-
-}
-#about{
-    text-align: left;
-}
-#about-content{
-    text-align:left;
+.other-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  scroll-margin-top: 2em;
 }
 
+#navigation ul {
+  display: flex;
+  gap: 4em;
+  padding-bottom: 0;
+  list-style: none;
+}
+#navigation {
+  position: fixed;
+  top: 0;
+  background-color: ghostwhite;
+  width: 100%;
+}
+a:hover {
+  opacity: 0.3;
+}
+#name {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 20%;
+  scroll-margin-top: 2em;
+}
 
+#profile-picture {
+  align-content: center;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  scroll-margin-top: 20em;
+}
+#about {
+  text-align: left;
+  scroll-margin-top: 2em;
+}
+#about-content {
+  text-align: left;
+}
 
-body{    
-    background-color:var(--ash-gray);
-    color:var(--textdark);
-    font-family:'Bitter', serif;
-    font-size: 24px;  
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom:25px;
+body {
+  background-color: var(--ash-gray);
+  color: var(--textdark);
+  font-family: "Bitter", serif;
+  font-size: 24px;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 25px;
+  background-image: url("../img/Designer.jpeg"); /* relative to css directory */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.05);
+  background-blend-mode: luminosity;
 }
 
 a {
-    color:hotpink
-  }
+  color: hotpink;
+}
 
 h1 {
-    text-align:center
-
+  text-align: center;
 }
 
 h2 {
-    text-align:left
-
+  text-align: left;
 }
-
-
-
-
-
-
