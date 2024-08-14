@@ -93,6 +93,7 @@ img {
 
 #about {
   text-align: left;
+  scroll-margin-top: 3em ;
 }
 #about-content {
   text-align: left;
@@ -101,6 +102,11 @@ img {
 .about-container {
   max-width: 100%;
   outline-style: solid;
+  
+}
+
+#experience, #skills, #connect, #projects {
+  scroll-margin-top: 3em;
 }
 .experience-container {
   display: grid;
