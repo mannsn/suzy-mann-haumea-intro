@@ -128,17 +128,15 @@ img {
 /* Larger screens (laptops and desktops) */
 @media (min-width: 1025px) {
   #name {
-    font-family:Georgia, 'Times New Roman', Times, serif
-      }
+    font-family: Georgia, "Times New Roman", Times, serif;
   }
-
+}
 
 /* High-resolution screens (hi-res laptops and desktops) */
 @media (min-width: 1281px) {
   #name {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
- 
 }
 
 #about {
@@ -171,7 +169,6 @@ img {
     grid-template-columns: 1fr 1fr;
     gap: 2%;
   }
-
 }
 
 /* High-resolution screens (hi-res laptops and desktops) */
@@ -181,7 +178,6 @@ img {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2%;
   }
- 
 }
 
 .ex-item {
