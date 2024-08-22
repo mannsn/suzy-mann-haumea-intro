@@ -1,3 +1,6 @@
+
+
+
 //Create a footer element
 const aFooter = document.createElement("FOOTER");
 aFooter.className = "footer";
@@ -38,6 +41,8 @@ for (let i = 0; i < skills.length; i++) {
   skill.innerText = skills[i];
   skillsList[0].appendChild(skill);
 }
+
+ 
 
 //Callback for remove button
 function onRemoveButton(event) {
@@ -105,4 +110,8 @@ const messageForms = document.getElementsByName("leave_message");
 console.log(messageForms);
 const messageForm = messageForms[0];
 console.log(messageForm);
+
+ 
+
+ //Attach the listener
 messageForm.addEventListener("submit", onFormSubmit);
