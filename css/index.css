@@ -107,13 +107,13 @@ input[type="email"] {
 
 #linkedinlogo {
   display: block;
-  max-width: 75%;
+  max-width: 50%;
   height: auto;
 }
 
 #instagramlogo {
   display: block;
-  max-width: 75%;
+  max-width: 50%;
   height: auto;
 }
 

@@ -127,8 +127,9 @@ fetch("https://api.github.com/users/mannsn/repos")
 
   //Get the data and add it to the html
   .then((data) => {
+    console.log ("json data = ", data);
     repositories = [...data];
-    console.log (repositories);
+    console.log ("repositories array =", repositories);
 
     //Find the project section and ul
     const projectSection = document.getElementById("projects-section");
