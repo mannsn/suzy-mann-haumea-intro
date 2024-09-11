@@ -91,6 +91,14 @@ input[type="text"] {
   font-size: 2vw;
 }
 
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: 2vw;
+}
+
 #profile-picture {
   border-radius: 10%;
   max-width: 20%;
@@ -99,13 +107,13 @@ input[type="text"] {
 
 #linkedinlogo {
   display: block;
-  max-width: 75%;
+  max-width: 50%;
   height: auto;
 }
 
 #instagramlogo {
   display: block;
-  max-width: 75%;
+  max-width: 50%;
   height: auto;
 }
 
