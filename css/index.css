@@ -1,68 +1,79 @@
-    
-:root {       
-      
-    /* CSS HEX */
-    --ash-gray: #ccdad1ff;
-    --ash-gray-2: #9caea9ff;
-    --battleship-gray: #788585ff;
-    --dim-gray: #6f6866ff;
-    --van-dyke: #38302eff;
-    --textdark: #001845
+:root {
+  /* CSS HEX */
+  --ash-gray: #ccdad1ff;
+  --ash-gray-2: #9caea9ff;
+  --battleship-gray: #788585ff;
+  --dim-gray: #6f6866ff;
+  --van-dyke: #38302eff;
+  --textdark: #001845;
+}
 
-
-
- }
-
- .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-  }
-
-body{    
-    background-color:var(--ash-gray);
-    color:var(--textdark);
-    font-family:'Bitter', serif;
-    font-size: 24px;  
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+    background-color: var(--ash-gray);
+    color: var(--textdark);
+    font-family: "Bitter", serif;
+    font-size: 24px;
     padding-top: 25px;
     padding-left: 25px;
     padding-right: 25px;
-    padding-bottom:25px;
-
-    
-
-    
-}
-
-a {
+    padding-bottom: 25px;
+    background-image: url("../img/Designer.jpeg"); /* relative to css directory */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.05);
+    background-blend-mode: luminosity;
+  }
+  
+  a {
     color: hotpink;
   }
-
-h1 {
-    text-align:center
-
-}
-
-h2 {
-    text-align:left
-
-}
-
-li {
-    list-style-type: square;
+  
+  h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: left;
   }
 
-#name{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+li {
+  list-style-type: square;
 }
 
-#profile-picture{
+#name {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-top: 20%;
+    scroll-margin-top: 2em;
+  }
+
+
+  #profile-picture {
     align-content: center;
-
-}
-#about{
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    scroll-margin-top: 20em;
+  }
+  #about {
     text-align: left;
-}
-#about-content{
-    text-align:center;
+    scroll-margin-top: 2em;
+  }
+  #about-content {
+    text-align: left;
+  }
+#experience {
+    scroll-margin-top: 3em;
+  }
+
+#experience-section{
+    font-style: italic;
 }
