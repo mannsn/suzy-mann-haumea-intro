@@ -9,10 +9,12 @@
 }
 
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
 body {
     background-color: var(--ash-gray);
     color: var(--textdark);
@@ -43,15 +45,8 @@ li {
   scroll-margin-top: 2em;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
 
 #profile-picture {
-  align-content: center;
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
   border-bottom-left-radius: 1em;
