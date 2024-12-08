@@ -30,6 +30,10 @@ li {
   list-style-type: square;
 }
 
+h1,h2{
+    text-align: left;
+}
+
 #name {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;  
 }
@@ -49,5 +53,6 @@ li {
   margin: 20px;
   background-color: rgb(103, 163, 206);
   border-radius: 1em;  
+  box-shadow: 10px 10px ;
 }
 
