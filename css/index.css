@@ -20,7 +20,6 @@ body {
   color: var(--textdark);
   font-family: "Quicksand";
   font-size: 3vw;
-  padding: 15%;
 }
 
 a {
@@ -41,8 +40,7 @@ li {
 
 #name {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  margin-top: 20%;
-  scroll-margin-top: 2em;
+  margin-top: 20%; 
 }
 
 #profile-picture {
