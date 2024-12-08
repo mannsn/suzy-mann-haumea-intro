@@ -26,14 +26,6 @@ a {
   color: hotpink;
 }
 
-h1 {
-  text-align: center;
-}
-
-h2 {
-  text-align: left;
-}
-
 li {
   list-style-type: square;
 }
@@ -46,16 +38,10 @@ li {
   border-radius: 1em; 
 }
 
-#about {
-  text-align: left;
-  
-}
 #about-content {
   text-align: left;
 }
-#experience {
 
-}
 #experience-section {
   text-align: left;
   border: 2px solid black;
