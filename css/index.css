@@ -43,6 +43,13 @@ li {
   scroll-margin-top: 2em;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
 #profile-picture {
   align-content: center;
   border-top-left-radius: 1em;
