@@ -39,8 +39,7 @@ li {
 }
 
 #name {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  margin-top: 20%; 
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;  
 }
 
 #profile-picture {
@@ -58,9 +57,11 @@ li {
 
 }
 #experience-section {
-  font-style: italic;
   text-align: left;
   border: 2px solid black;
   padding: 20px;
   margin: 20px;
+  background-color: rgb(103, 163, 206);
+  border-radius: 1em;  
 }
+
