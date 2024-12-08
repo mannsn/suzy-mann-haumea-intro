@@ -46,19 +46,18 @@ li {
 }
 
 #profile-picture {
-  border-radius: 1em;
-  scroll-margin-top: 20em;
+  border-radius: 1em; 
 }
 
 #about {
   text-align: left;
-  scroll-margin-top: 2em;
+  
 }
 #about-content {
   text-align: left;
 }
 #experience {
-  scroll-margin-top: 3em;
+
 }
 #experience-section {
   font-style: italic;
