@@ -14,23 +14,12 @@
   margin-right: auto;
 }
 body {
-  background-color: var(--ash-gray);
-  color: var(--textdark);
-  font-family: "Bitter", serif;
-  font-size: 24px;
-  padding-top: 25px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 25px;
-  background-image: url("../img/Designer.jpeg"); /* relative to css directory */
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.05);
-  background-blend-mode: luminosity;
-}
+    background-color: var(--ash-gray);
+    color: var(--textdark);
+    font-family: "Quicksand";
+    font-size: 3vw;
+    padding: 15%;
+  }
 
 a {
   color: hotpink;
@@ -78,5 +67,5 @@ li {
   border: 2px solid black;
   padding: 20px;
   margin: 20px;
-  
+
 }
