@@ -38,14 +38,15 @@ h2 {
 
 #name {
   text-align: center;
-  color:blueviolet;
+  color: blueviolet;
   padding: 10px;
 }
 
 #profile-picture {
   border-radius: 1em;
-  border: 10px 5px 5px 1px solid blue 
+  border: 10px 5px 5px 1px solid purple;
 }
+
 #about-section {
   padding: 10px;
 }
@@ -59,19 +60,20 @@ h2 {
   padding: 20px;
   margin: 20px;
   background-color: rgb(103, 163, 206);
-  border-color:blueviolet;
+  border-color: blueviolet;
   border-width: 3px;
   border-style: solid;
   border-radius: 1em;
   box-shadow: 10px 10px 15px 1px;
   ul li {
-    list-style-type:none;
+    list-style-type: none;
     border: 2px solid darkcyan;
   }
- }
+}
 
- #experience-section li { border: 10px 5px 5px 1px solid black;}
-  
+/*example of overriding li list style */
 #connect-section {
-  li{list-style-type:none;}
+  li {
+    list-style-type: none;
+  }
 }
