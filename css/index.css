@@ -44,6 +44,7 @@ h2 {
 
 #profile-picture {
   border-radius: 1em;
+  border: 10px 5px 5px 1px solid blue 
 }
 #about-section {
   padding: 10px;
@@ -62,5 +63,15 @@ h2 {
   border-width: 3px;
   border-style: solid;
   border-radius: 1em;
-  box-shadow: 10px 10px 15px 2px;
-}
+  box-shadow: 10px 10px 15px 1px;
+  ul li {
+    list-style-type:none;
+    border: 2px solid darkcyan;
+  }
+ }
+
+ #experience-section li { border: 10px 5px 5px 1px solid black;}
+  
+/*#connect-section {
+  li{list-style-type:none;}
+}*/
