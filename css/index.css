@@ -64,7 +64,7 @@ h2 {
   border-width: 3px;
   border-style: solid;
   border-radius: 1em;
-  box-shadow: 10px 10px 5px 1px lightcoral;  
+  box-shadow: 10px 10px 2px 0.25px lightcoral;
   ul li {
     list-style-type: none;
     border: 2px solid darkcyan;
