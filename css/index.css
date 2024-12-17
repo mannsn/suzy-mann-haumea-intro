@@ -163,7 +163,7 @@ img {
 }
 
 /* Larger screens (laptops and desktops) */
-@media (min-width: 1025px) {
+/*media (min-width: 1025px) {
   .experience-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -172,13 +172,13 @@ img {
 }
 
 /* High-resolution screens (hi-res laptops and desktops) */
-@media (min-width: 1281px) {
+/*@media (min-width: 1281px) {
   .experience-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2%;
   }
-}
+}*/
 
 .ex-item {
   display: flex;
