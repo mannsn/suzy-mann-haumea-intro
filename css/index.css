@@ -71,9 +71,11 @@ h2 {
   }
 }
 
-/*example of overriding li list style */
+
 #connect-section {
   li {
     list-style-type: none;
+    border: 2px solid darkcyan;
+    
   }
 }
