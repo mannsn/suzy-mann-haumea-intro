@@ -155,12 +155,19 @@ img {
 #experience {
   scroll-margin-top: 3em;
 }
-
+/*
 .experience-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2%;
+}*/
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2%;
 }
+
 
 /* Larger screens (laptops and desktops) */
 /*media (min-width: 1025px) {
