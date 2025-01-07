@@ -111,6 +111,7 @@ section{
 
 #experience, #skills, #connect, #projects {
   scroll-margin-top: 3em;
+  margin-top: 5em;
 }
 .experience-container {
   display: grid;
