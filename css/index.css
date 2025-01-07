@@ -124,7 +124,8 @@ section{
   flex-direction: row;
   justify-content: center;
   border-style: solid;
-  border-color:blue
+  border-color:blue;
+  gap:5em;
 }
 
 .ex-part {
@@ -169,5 +170,10 @@ section{
   }
   #name {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .experience-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5em;
   }
 }
