@@ -57,6 +57,9 @@ img {
   width: 50%
 }
 
+section{
+  scroll-margin-top: 5em;
+}
 #profile-picture {
   border-radius: 10%;
   max-width: 20%;
