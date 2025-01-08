@@ -54,10 +54,10 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%
+  width: 50%;
 }
 
-section{
+section {
   scroll-margin-top: 5em;
 }
 #profile-picture {
@@ -96,7 +96,7 @@ section{
 
 #about {
   text-align: left;
-  scroll-margin-top: 3em ;
+  scroll-margin-top: 3em;
 }
 #about-content {
   text-align: left;
@@ -106,16 +106,23 @@ section{
   max-width: 100%;
   border-style: solid;
   border-color: blue;
-  
 }
 
-#experience, #skills, #connect, #projects {
+#experience,
+#skills,
+#connect,
+#projects {
   scroll-margin-top: 3em;
   margin-top: 5em;
 }
 .experience-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+
+  /*repeat(auto-fill, ...): This function repeats the columns as many times as possible within the container's width.
+  minmax(300px, 1fr): This function sets the minimum width of each column to  300px and the maximum width to 1 fraction of the available space (1fr).
+  1fr stands for "one fraction" of the available space in the grid container.
+ .*/
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2%;
 }
 
@@ -124,8 +131,8 @@ section{
   flex-direction: row;
   justify-content: center;
   border-style: solid;
-  border-color:blue;
-  gap:5em;
+  border-color: blue;
+  gap: 5em;
 }
 
 .ex-part {
@@ -157,7 +164,7 @@ section{
   }
   .experience-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /*grid-template-columns: 1fr 1fr;*/
     gap: 5em;
   }
 }
@@ -168,7 +175,7 @@ section{
     background-color: var(--ash-gray);
   }
   a {
-    color:coral;
+    color: coral;
   }
   #navigation {
     background-color: var(--ash-gray);
