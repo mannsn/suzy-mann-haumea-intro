@@ -54,7 +54,7 @@ function onRemoveButton(event) {
   }
 }
 
-//Callback for submit
+//Callback for submit of the form
 function onFormSubmit(event) {
   event.preventDefault();
 
