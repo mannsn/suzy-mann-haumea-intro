@@ -2,7 +2,7 @@
   /* CSS HEX */
   --ash-gray: #ccdad1ff;
   --ash-gray-2: #9caea9ff;
-  --battleship-gray: #788585ff;
+  --battleship-gray: #788585;
   --dim-gray: #6f6866ff;
   --van-dyke: #38302eff;
   --textdark: #001845;
@@ -20,7 +20,7 @@ body {
   color: var(--textdark);
   font-family: "Quicksand";
   font-size: 3vw;
-  padding: 15%;
+  padding: 5%;
 }
 
 h1,
@@ -78,6 +78,13 @@ button:hover {
   opacity: 0.3;
 }
 
+.button-container { display: flex; justify-content: center; }
+
+section{
+  scroll-margin-top: 2em;
+  margin-top: 2em;
+}
+
 ul {
   list-style-type: none;
 }
@@ -111,13 +118,17 @@ input[type="email"]
 }
 
 #navigation {
-  position: fixed;
+  position:sticky;
   top: 0;
   background-color: var(--ash-gray);
+  font-size: small;
 }
 
 #navigation ul {
   display: flex;
+  flex-direction:row;
+  flex-wrap: nowrap;
+  justify-content: left;
   gap: 4em;
   list-style: none;
 }
@@ -194,6 +205,7 @@ input[type="email"]
     }
     #navigation {
       background-color: var(--battleship-gray);
+      font-size: medium;
     }
     #name {
       font-family: "Dancing Script", cursive;
@@ -210,6 +222,7 @@ input[type="email"]
     }
     #navigation {
       background-color: var(--ash-gray);
+      font-size: medium;
     }
     #name {
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;

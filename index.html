@@ -26,14 +26,16 @@
   <body>
     <nav id="navigation">
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#connect">Connect</a></li>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#experience-section">Experience</a></li>
+        <li><a href="#skills-section">Skills</a></li>
+        <li><a href="#projects-section">Projects</a></li>
+        <li><a href="#connect-section">Connect</a></li>
+        <li><a href="#leave-messages-section">Messages</a></li>
       </ul>
     </nav>
 
+    <section id="about-section"></section>
     <h1 id="name">Suzy Mann</h1>
     <h2 id="about">About</h2>
     <div class="about-container">
@@ -50,7 +52,9 @@
         id="profile-picture"
       />
     </div>
+  </section>
 
+    <section id="experience-section">
     <h2 id="experience">Experience</h2>
     <div class="experience-container">
       <div class="ex-item">
@@ -76,6 +80,7 @@
         </div>
       </div>
     </div>
+  </section>
 
     <section id="skills-section">
       <h2 id="skills">Skills</h2>
@@ -86,9 +91,8 @@
       <h2 id="projects">Projects</h2>
       <ul id="projects-list"></ul>
     </section>
-    
 
-
+    <section id="connect-section">
     <h2 id="connect">Connect</h2>
     <div class="connect-container">
       <div class="linkedin">
@@ -114,8 +118,9 @@
         </div>
       </div>
     </div>
+  </section>
 
-    <section>
+    <section id="leave-messages-section">
       <h2>Leave a Message</h2>
       <form id="messageForm" name="leave_message" autocomplete="on">
         <label for="usersNameId">Users Name:</label>
@@ -128,7 +133,7 @@
         <label for="emailId">Email: </label>
         <input
           type="email"
-          name="email"
+          name="usersEmail"
           id="emailId"
           required="true"
           autocomplete="on"
@@ -140,9 +145,11 @@
           id="usersMessageId"
           required="true"
         /><br />
-        <button type="submit" class="button" name="submitButton">
-          Submit
-        </button>
+        <div class="button-container">
+          <button type="submit" class="button" name="submitButton">
+            Submit
+          </button>
+        </div>
       </form>
     </section>
 

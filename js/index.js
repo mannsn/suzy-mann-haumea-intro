@@ -62,7 +62,7 @@ function onFormSubmit(event) {
   console.log(data);
 
   const userName = data.get("usersName");
-  const email = data.get("email");
+  const email = data.get("usersEmail");
   const usersMessage = data.get("usersMessage");
   console.log(userName);
   console.log(email);
