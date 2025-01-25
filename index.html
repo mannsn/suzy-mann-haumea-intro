@@ -26,56 +26,61 @@
   <body>
     <nav id="navigation">
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#connect">Connect</a></li>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#experience-section">Experience</a></li>
+        <li><a href="#skills-section">Skills</a></li>
+        <li><a href="#projects-section">Projects</a></li>
+        <li><a href="#leave-message-sectio">Leave a Message</a></li>
+        <li><a href="#connect-section">Connect</a></li>
       </ul>
     </nav>
 
-    <h1 id="name">Suzy Mann</h1>
-    <h2 id="about">About</h2>
-    <div class="about-container">
-      <p id="about-content">
-        I am a mentor for Code The Dream. I am retired after working 30 plus
-        years in Software Technology on a variety of programs and technologies.
-        I now spend my time with my grandchildren, and family. I love to hike,
-        kayak and sew. I enjoy being a mentor on Code the Dream!
-      </p>
-      <img
-        src="img/Suzy.jpg"
-        alt="Suzy Mann headshot"
-        class="center_pic"
-        id="profile-picture"
-      />
-    </div>
+    <section id="about-section">
+      <h1 id="name">Suzy Mann</h1>
+      <h2 id="about">About</h2>
+      <div class="about-container">
+        <p id="about-content">
+          I am a mentor for Code The Dream. I am retired after working 30 plus
+          years in Software Technology on a variety of programs and
+          technologies. I now spend my time with my grandchildren, and family. I
+          love to hike, kayak and sew. I enjoy being a mentor on Code the Dream!
+        </p>
+        <img
+          src="img/Suzy.jpg"
+          alt="Suzy Mann headshot"
+          class="center_pic"
+          id="profile-picture"
+        />
+      </div>
+    </section>
 
-    <h2 id="experience">Experience</h2>
-    <div class="experience-container">
-      <div class="ex-item">
-        <h3>1984-2001</h3>
-        <div class="ex-part">
-          <h3>Sofware developer</h3>
-          <p>
-            Software devopment on projects using various technologies and
-            languages such as assembly, PL1, C, C++
-          </p>
+    <section id="experience-section">
+      <h2 id="experience">Experience</h2>
+      <div class="experience-container">
+        <div class="ex-item">
+          <h3>1984-2001</h3>
+          <div class="ex-part">
+            <h3>Sofware developer</h3>
+            <p>
+              Software devopment on projects using various technologies and
+              languages such as assembly, PL1, C, C++
+            </p>
+          </div>
+        </div>
+        <div class="ex-item">
+          <h3>2001-present</h3>
+          <div class="ex-part">
+            <h3>Sofware lead</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quo
+              autem harum temporibus alias, voluptatum consectetur! Molestiae,
+              nulla tempora? Earum magni nulla quo ad ullam consectetur adipisci
+              culpa in expedita.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="ex-item">
-        <h3>2001-present</h3>
-        <div class="ex-part">
-          <h3>Sofware lead</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quo
-            autem harum temporibus alias, voluptatum consectetur! Molestiae,
-            nulla tempora? Earum magni nulla quo ad ullam consectetur adipisci
-            culpa in expedita.
-          </p>
-        </div>
-      </div>
-    </div>
+    </section>
 
     <section id="skills-section">
       <h2 id="skills">Skills</h2>
@@ -86,36 +91,39 @@
       <h2 id="projects">Projects</h2>
       <ul id="projects-list"></ul>
     </section>
-    
 
-
-    <h2 id="connect">Connect</h2>
-    <div class="connect-container">
-      <div class="linkedin">
-        <div>
-          <a href="https://www.linkedin.com/in/suzannenmann/" id="linkedinlogo">
-            <img src="img/linkedin-logo-square-300x300.png" alt=""Linked In
-            Logo" id="linkedinlogo">
-          </a>
+    <section id="connect-section">
+      <h2 id="connect">Connect</h2>
+      <div class="connect-container">
+        <div class="linkedin">
+          <div>
+            <a
+              href="https://www.linkedin.com/in/suzannenmann/"
+              id="linkedinlogo"
+            >
+              <img src="img/linkedin-logo-square-300x300.png" alt=""Linked In
+              Logo" id="linkedinlogo">
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="instagram">
-        <div>
-          <a
-            href="https://www.instagram.com/sew_suz?igsh=OWtsaTBzMmNiMmZ3"
-            id="instagramlogo"
-          >
-            <img
-              src="img/instagram300.png"
-              alt="Instagram Logo"
+        <div class="instagram">
+          <div>
+            <a
+              href="https://www.instagram.com/sew_suz?igsh=OWtsaTBzMmNiMmZ3"
               id="instagramlogo"
-            />
-          </a>
+            >
+              <img
+                src="img/instagram300.png"
+                alt="Instagram Logo"
+                id="instagramlogo"
+              />
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <section>
+    <section id="leave-message-section">
       <h2>Leave a Message</h2>
       <form id="messageForm" name="leave_message" autocomplete="on">
         <label for="usersNameId">Users Name:</label>
@@ -140,9 +148,7 @@
           id="usersMessageId"
           required="true"
         /><br />
-        <button type="submit" class="button" name="submitButton">
-          Submit
-        </button>
+        <button type="submit" class="button" name="submitButton">Submit</button>
       </form>
     </section>
 
