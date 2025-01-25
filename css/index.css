@@ -27,13 +27,17 @@ h1,
 h2,
 p,
 a,
-section,
 li,
 ul,
 div {
   margin-top: 0;
   margin-bottom: 1em;
   padding: 1%;
+}
+
+section {
+  scroll-margin-top: 10em;
+  margin-top: 5em;
 }
 
 a {
@@ -68,11 +72,11 @@ button {
   font-weight: bold;
   text-align: center;
   display: block;
-  max-width: 70%;
+  max-width: 50%;
   border-radius: 60%;
   margin-left: 10%;
   font-family: "Quicksand";
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 button:hover {
@@ -85,16 +89,16 @@ ul {
 
 input[type="text"] {
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  //padding: 12px 20px;
+  margin: 2em;
   box-sizing: border-box;
   font-size: 2vw;
 }
 
 input[type="email"] {
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  //padding: 12px 20px;
+  margin: 2em;
   box-sizing: border-box;
   font-size: 2vw;
 }
