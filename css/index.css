@@ -84,12 +84,14 @@ section {
   position: sticky;
   top: 0;
   background-color: var(--ash-gray);
+  width: 100%
 }
 
 #navigation ul {
   display: flex;
   gap: 4em;
   list-style: none;
+  justify-content: center;
 }
 
 #name {
@@ -116,9 +118,11 @@ section {
 #projects {
   scroll-margin-top: 3em;
   margin-top: 5em;
+ 
 }
 .experience-container {
   display: grid;
+ 
 
   /*repeat(auto-fill, ...): This function repeats the columns as many times as possible within the container's width.
   minmax(300px, 1fr): This function sets the minimum width of each column to  300px and the maximum width to 1 fraction of the available space (1fr).
@@ -135,6 +139,7 @@ section {
   border-style: solid;
   border-color: blue;
   gap: 5em;
+  padding: 1em;  
 }
 
 .ex-part {
@@ -154,6 +159,8 @@ section {
 @media (min-width: 1025px) {
   body {
     background-color: var(--battleship-gray);
+    
+
   }
   a {
     color: hotpink;
@@ -172,18 +179,31 @@ section {
 }
 
 /* High-resolution screens (hi-res laptops and desktops) */
-@media (min-width: 1281px) {
+@media (min-width: 1400px) {
   body {
     background-color: var(--ash-gray);
+    font-size: 1vw;
   }
   a {
     color: coral;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
   }
   #navigation {
     background-color: var(--ash-gray);
   }
   #name {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  #profile-picture {
+    border-radius: 10%;
+    max-width: 10%;
+    background-size: contain;
   }
   .experience-container {
     display: grid;
