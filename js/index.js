@@ -32,7 +32,7 @@ console.log(skills);
 //Find the skills section and unordered list
 const skillsSection = document.querySelector("#skills-section");
 console.log(skillsSection);
-var skillsList = document.getElementById("skills-list");
+var skillsList = skillsSection.getElementsByTagName("ul")[0];
 console.log(skillsList);
 
 for (let i = 0; i< skills.length; i++)
