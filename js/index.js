@@ -38,6 +38,60 @@ for (let i = 0; i < skills.length; i++) {
   skill.innerText = skills[i];
   skillsList[0].appendChild(skill);
 }
+
+//Callback for save button
+function onSaveButton(event) {
+  console.log("Save");
+
+  const entry = event.target.parentNode;
+  console.log(entry);
+
+  //Get the updated input fields
+  const inputElement = entry.querySelector("input");
+  let usersMessage = entry.querySelector("input[name='usersMessage']").value;
+  console.log(usersMessage);
+
+  // Create span field from updated input field
+  let spanText = document.createElement("span");
+  spanText.textContent = usersMessage;
+  console.log(spanText);
+
+  //Replace the old message with the new one
+  inputElement.replaceWith(spanText);
+
+  // Change button to "Edit"
+  this.textContent = "Edit";
+  this.classList.add("editButton");
+  this.setAttribute("id", "editButtonId");
+  this.removeEventListener("click", onSaveButton);
+  this.addEventListener("click", onEditButton);
+  console.log(this);
+}
+
+//Callback for remove button
+function onEditButton(event) {
+  console.log("Edit");
+  const entry = event.target.parentNode;
+  const messageElement = entry.querySelector("span");
+
+  // Create input field and replace span
+  let inputField = document.createElement("input");
+  inputField.type = "text";
+  inputField.name = "usersMessage";
+  inputField.value = messageElement.textContent;
+  console.log(inputField);
+
+  messageElement.replaceWith(inputField);
+
+  // Change button to "Save"
+  this.textContent = "Save";
+  this.classList.add("saveButton");
+  this.setAttribute("id", "saveButtonId");
+  this.removeEventListener("click", onEditButton);
+  this.addEventListener("click", onSaveButton);
+  console.log(this);
+}
+
 //Callback for remove button
 function onRemoveButton(event) {
   console.log("Remove");
@@ -81,6 +135,14 @@ function onFormSubmit(event) {
   console.log(newString);
   newMessage.innerHTML = newString;
 
+  //Add an edit  button
+  const editButton = document.createElement("BUTTON");
+  editButton.innerText = "Edit";
+  editButton.setAttribute("type", "button");
+  editButton.setAttribute("id", "editButtonId");
+  editButton.addEventListener("click", onEditButton);
+  console.log(editButton);
+
   //Add a remove button
   const removeButton = document.createElement("BUTTON");
   removeButton.innerText = "Remove";
@@ -88,6 +150,9 @@ function onFormSubmit(event) {
   removeButton.setAttribute("id", "removeButtonId");
   removeButton.addEventListener("click", onRemoveButton);
   console.log(removeButton);
+
+  //Add edit button
+  newMessage.appendChild(editButton);
 
   //Add remove button
   newMessage.appendChild(removeButton);
@@ -99,7 +164,10 @@ function onFormSubmit(event) {
   event.target.reset();
 }
 
+//Hide the message section initially
+const messageSection = document.getElementById("messages");
+messageSection.hidden = true;
+
 //Find the leave messages form and add the callback for submit
 const messageForms = document.getElementsByName("leave_message");
-const messageForm = messageForms[0];
-messageForm.addEventListener("submit", onFormSubmit);
+messageForms[0].addEventListener("submit", onFormSubmit);

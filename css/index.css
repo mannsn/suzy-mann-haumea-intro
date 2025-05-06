@@ -66,11 +66,12 @@ button {
   background-color: cadetblue;
   color: #001845;
   font-weight: bold;
+  font-size: 60%;
   text-align: center;
   max-width: 30%;
   border-radius: 60%;
   align-self: center;
-  font-size: 60%;
+  margin-left: 1em;
 }
 
 button:hover {
