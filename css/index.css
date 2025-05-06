@@ -89,15 +89,13 @@ ul {
 
 input[type="text"] {
   width: 100%;
-  //padding: 12px 20px;
-  margin: 2em;
+   margin: 2em;
   box-sizing: border-box;
   font-size: 2vw;
 }
 
 input[type="email"] {
   width: 100%;
-  //padding: 12px 20px;
   margin: 2em;
   box-sizing: border-box;
   font-size: 2vw;
@@ -195,35 +193,34 @@ input[type="email"] {
   align-self: flex-end;
 }
 
-  /* Larger screens (laptops and desktops) */
-  @media (min-width: 1025px) {
-    body {
-      background-color: var(--battleship-gray);
-    }
-    a {
-      color: hotpink;
-    }
-    #navigation {
-      background-color: var(--battleship-gray);
-    }
-    #name {
-      font-family: "Dancing Script", cursive;
-    }
+/* Larger screens (laptops and desktops) */
+@media (min-width: 1025px) {
+  body {
+    background-color: var(--battleship-gray);
   }
-
-  /* High-resolution screens (hi-res laptops and desktops) */
-  @media (min-width: 1281px) {
-    body {
-      background-color: var(--ash-gray);
-    }
-    a {
-      color: coral;
-    }
-    #navigation {
-      background-color: var(--ash-gray);
-    }
-    #name {
-      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    }
+  a {
+    color: hotpink;
   }
+  #navigation {
+    background-color: var(--battleship-gray);
+  }
+  #name {
+    font-family: "Dancing Script", cursive;
+  }
+}
 
+/* High-resolution screens (hi-res laptops and desktops) */
+@media (min-width: 1281px) {
+  body {
+    background-color: var(--ash-gray);
+  }
+  a {
+    color: coral;
+  }
+  #navigation {
+    background-color: var(--ash-gray);
+  }
+  #name {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+}
