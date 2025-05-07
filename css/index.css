@@ -166,8 +166,8 @@ ul {
   flex-direction: column;
 }
 
-input {
-  font-size: 70%; /* Adjust the size as needed */
+input, textarea{
+  font-size: 50%; /* Adjust the size as needed */
 }
 
 #removeButtonId {

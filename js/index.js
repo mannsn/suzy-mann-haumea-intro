@@ -68,7 +68,7 @@ function onSaveButton(event) {
   console.log(this);
 }
 
-//Callback for remove button
+//Callback for edit  button
 function onEditButton(event) {
   console.log("Edit");
   const entry = event.target.parentNode;
