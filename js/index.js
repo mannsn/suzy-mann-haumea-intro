@@ -38,6 +38,7 @@ for (let i = 0; i < skills.length; i++) {
   skill.innerText = skills[i];
   skillsList[0].appendChild(skill);
 }
+//Message form functions
 
 //Callback for save button
 function onSaveButton(event) {
