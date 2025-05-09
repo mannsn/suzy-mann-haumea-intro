@@ -173,20 +173,7 @@ messageSection.hidden = true;
 const messageForms = document.getElementsByName("leave_message");
 console.log(messageForms);
 const messageForm = messageForms[0];
-
-
-//Hide the message section
-const messageSection = document.getElementById("messages");
-messageSection.hidden = true;
-
-console.log(messageForm);
-
-
 messageForm.addEventListener("submit", onFormSubmit);
-
-
-
-
 
 //Get the repositories from github
 fetch("https://api.github.com/users/mannsn/repos")

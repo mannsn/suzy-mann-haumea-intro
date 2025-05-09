@@ -89,7 +89,14 @@ ul {
 
 input[type="text"] {
   width: 100%;
-   margin: 2em;
+  margin: 2em;
+  box-sizing: border-box;
+  font-size: 2vw;
+}
+
+textarea {
+  width: 80%;
+  margin: 3em;
   box-sizing: border-box;
   font-size: 2vw;
 }
@@ -185,7 +192,8 @@ input[type="email"] {
   flex-direction: column;
 }
 
-input, textarea{
+input,
+textarea {
   font-size: 50%; /* Adjust the size as needed */
 }
 
