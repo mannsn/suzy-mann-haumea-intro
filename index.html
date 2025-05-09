@@ -7,6 +7,8 @@
     Class>
     <meta name="author" content="Suzy Mann" />
     <title>Suzy's first website</title>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+
     <link rel="stylesheet" href="css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -142,12 +144,9 @@
           autocomplete="on"
         /><br />
         <label for="usersMessageId">Users Message: </label>
-        <input
-          type="text"
-          name="usersMessage"
-          id="usersMessageId"
-          required="true"
-        /><br />
+        <textarea id="usersMessageId" name="usersMessage" required="true">
+        </textarea>
+        <br />
         <button type="submit" class="button" name="submitButton">Submit</button>
       </form>
     </section>

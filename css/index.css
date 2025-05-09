@@ -19,8 +19,9 @@ body {
   background-color: var(--ash-gray);
   color: var(--textdark);
   font-family: "Quicksand";
-  font-size: 2vw;
-  padding: 15%;
+  font-size: 3vw;
+  padding: 10%;
+  margin-top: 5em;
 }
 
 h1,
@@ -70,13 +71,12 @@ button {
   background-color: cadetblue;
   color: #001845;
   font-weight: bold;
+  font-size: 60%;
   text-align: center;
-  display: block;
-  max-width: 50%;
+  max-width: 30%;
   border-radius: 60%;
-  margin-left: 10%;
-  font-family: "Quicksand";
-  font-size: 2vw;
+  align-self: center;
+  margin-left: 1em;
 }
 
 button:hover {
@@ -178,14 +178,15 @@ input[type="email"] {
   background-color: white;
   border-style: solid;
 }
-.button {
-  align-self: center;
-}
 
 #messageForm {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+input, textarea{
+  font-size: 50%; /* Adjust the size as needed */
 }
 
 #removeButtonId {
