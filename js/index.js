@@ -211,15 +211,16 @@ fetch("https://api.github.com/users/mannsn/repos")
       var respositoryDescription = document.createElement("DIV");
       respositoryDescription.className = "repoDesc";
 
-      respositoryDescription.innerText = repositories[i].description 
-      ? repositories[i].description 
-      : `${repositories[i].name} development git repository`;
-    
-    console.log(respositoryDescription);
-    
-    project.appendChild(respositoryRow);
-      project.appendChild(respositoryName);
-      project.appendChild(respositoryDescription);
+      respositoryDescription.innerText = repositories[i].description
+        ? repositories[i].description
+        : `${repositories[i].name} development git repository`;
+
+      console.log(respositoryDescription);
+
+      
+      respositoryRow.appendChild(respositoryName);
+      respositoryRow.appendChild(respositoryDescription);
+      project.appendChild(respositoryRow);
       projectList[0].appendChild(project);
     }
   })

@@ -203,13 +203,16 @@ textarea {
   list-style: none;
   padding: 0;
   font-size: small;
-
+  grid-template-columns: repeat();
+  gap: 2%;
 }
 
 .repoItem {
   border: 1px solid #ddd;
   padding: 1em;
   background-color: #f9f9f9;
+  display: flex; /* Ensures items are in the same row */
+  flex-direction: column;
 }
 
 .repoRow {
@@ -222,13 +225,16 @@ textarea {
   font-weight: bold;
   background-color: #ddd;
   padding: 1em;
-  flex: 1; /* Allows the name to take up equal space */
+  flex:1;
+  
+  
  }
 
 .repoDesc {
   padding: 1em;
   background-color: #fefefe;
-  flex: 2; /* Gives more space to the description */
+  flex:2;
+ 
 }
 
 /* Larger screens (laptops and desktops) */
@@ -291,6 +297,7 @@ textarea {
     max-width: 10%;
     background-size: contain;
   }
+
   .experience-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
