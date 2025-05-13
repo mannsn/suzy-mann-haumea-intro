@@ -154,7 +154,7 @@ input[type="email"] {
   display: grid;
   grid-template-columns: repeat();
   gap: 2%;
-}
+  }
 
 .ex-item {
   display: flex;
@@ -199,6 +199,38 @@ textarea {
   align-self: flex-end;
 }
 
+#repo-list {
+  list-style: none;
+  padding: 0;
+  font-size: small;
+
+}
+
+.repoItem {
+  border: 1px solid #ddd;
+  padding: 1em;
+  background-color: #f9f9f9;
+}
+
+.repoRow {
+  display: flex; /* Ensures items are in the same row */
+  align-items: center; /* Aligns text vertically */
+  gap: 1em; /* Adds space between columns */
+  }
+
+.repoName {
+  font-weight: bold;
+  background-color: #ddd;
+  padding: 1em;
+  flex: 1; /* Allows the name to take up equal space */
+ }
+
+.repoDesc {
+  padding: 1em;
+  background-color: #fefefe;
+  flex: 2; /* Gives more space to the description */
+}
+
 /* Larger screens (laptops and desktops) */
 @media (min-width: 1025px) {
   body {
@@ -228,5 +260,40 @@ textarea {
   }
   #name {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+}
+
+
+/* High-resolution screens (hi-res laptops and desktops) */
+@media (min-width: 1400px) {
+  body {
+    background-color: var(--ash-gray);
+    font-size: 1vw;
+  }
+  a {
+    color: coral;
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+  #navigation {
+    background-color: var(--ash-gray);
+  }
+  #name {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  #profile-picture {
+    border-radius: 10%;
+    max-width: 10%;
+    background-size: contain;
+  }
+  .experience-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5em;
   }
 }

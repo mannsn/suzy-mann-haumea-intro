@@ -177,8 +177,7 @@ messageForm.addEventListener("submit", onFormSubmit);
 
 //Get the repositories from github
 fetch("https://api.github.com/users/mannsn/repos")
-
-   //Get the response
+  //Get the response
   .then((response) => {
     if (!response.ok) {
       throw new Error("Request failed");
@@ -188,19 +187,39 @@ fetch("https://api.github.com/users/mannsn/repos")
 
   //Get the data and add it to the html
   .then((data) => {
-    console.log ("json data = ", data);
+    console.log("json data = ", data);
     repositories = [...data];
-    console.log ("repositories array =", repositories);
+    console.log("repositories array =", repositories);
 
     //Find the project section and ul
     const projectSection = document.getElementById("projects-section");
     const projectList = projectSection.getElementsByTagName("UL");
-   
+
     //Create the respositories list by adding it to the html
     for (let i = 0; i < repositories.length; i++) {
       var project = document.createElement("LI");
-      project.innerText = repositories[i].html_url;
-      console.log(project);
+      project.className = "repo-list";
+
+      var respositoryRow = document.createElement("DIV");
+      respositoryRow.className = "repoRow";
+
+      var respositoryName = document.createElement("DIV");
+      respositoryName.className = "repoName";
+      respositoryName.innerText = `${repositories[i].name}`;
+      console.log(respositoryName);
+
+      var respositoryDescription = document.createElement("DIV");
+      respositoryDescription.className = "repoDesc";
+
+      respositoryDescription.innerText = repositories[i].description 
+      ? repositories[i].description 
+      : `${repositories[i].name} development git repository`;
+    
+    console.log(respositoryDescription);
+    
+    project.appendChild(respositoryRow);
+      project.appendChild(respositoryName);
+      project.appendChild(respositoryDescription);
       projectList[0].appendChild(project);
     }
   })
