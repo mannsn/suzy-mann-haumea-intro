@@ -156,13 +156,7 @@ ul {
   border-style: solid;
 }
 
-.connect-container {
-  display: flex;
-  flex: 1 0 auto;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-}
+
 
 .message-container {
   display: block;
@@ -197,7 +191,7 @@ textarea {
   display: grid;
   grid-template-columns: auto;
   gap: 2%;
-}
+ }
 
 .repoItem {
   display: flex;
@@ -208,7 +202,7 @@ textarea {
 .repoRow {
   display: flex; /* Ensures items are in the same row */
   flex-direction: row;
-  gap: 1em; /* Adds space between columns */
+  gap: 1em; 
   border-style: solid;
 }
 
@@ -221,6 +215,14 @@ textarea {
 .repoDesc {
   padding: 1em;
   background-color: #fefefe;
+}
+
+.connect-container {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 /* Larger screens (laptops and desktops) */
