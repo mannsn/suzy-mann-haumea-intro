@@ -87,24 +87,6 @@ ul {
   list-style-type: none;
 }
 
-input[type="text"] {
-  width: 70%;
-  margin: 2em;
-  box-sizing: border-box;
-}
-
-textarea {
-  width: 70%;
-  margin: 3em;
-  box-sizing: border-box;
-}
-
-input[type="email"] {
-  width: 70%;
-  margin: 2em;
-  box-sizing: border-box;
-}
-
 #profile-picture {
   border-radius: 10%;
   max-width: 20%;
@@ -127,11 +109,13 @@ input[type="email"] {
   position: fixed;
   top: 0;
   background-color: var(--ash-gray);
+  width: 100%;
 }
 
 #navigation ul {
+  font-size: 2vw;
   display: flex;
-  gap: 4em;
+  gap: 2em;
   list-style: none;
 }
 
@@ -154,7 +138,7 @@ input[type="email"] {
   display: grid;
   grid-template-columns: repeat();
   gap: 2%;
-  }
+}
 
 .ex-item {
   display: flex;
@@ -166,6 +150,10 @@ input[type="email"] {
 .ex-part {
   display: flex;
   flex-direction: column;
+}
+
+#skills-section{
+  border-style:solid;
 }
 
 .connect-container {
@@ -185,14 +173,17 @@ input[type="email"] {
 
 #messageForm {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  align-items: left;
 }
 
 input,
 textarea {
   font-size: 50%; /* Adjust the size as needed */
-}
+  width: 50%;
+  box-sizing: border-box;
+  text-align: left;
+ }
 
 #removeButtonId {
   display: inline-block;
@@ -203,38 +194,33 @@ textarea {
   list-style: none;
   padding: 0;
   font-size: small;
-  grid-template-columns: repeat();
+  display: grid;
+  grid-template-columns: 22% 22%;
   gap: 2%;
 }
 
 .repoItem {
-  border: 1px solid #ddd;
-  padding: 1em;
-  background-color: #f9f9f9;
-  display: flex; /* Ensures items are in the same row */
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .repoRow {
   display: flex; /* Ensures items are in the same row */
-  align-items: center; /* Aligns text vertically */
+  flex-direction: row;
   gap: 1em; /* Adds space between columns */
-  }
+  border-style: solid;
+}
 
 .repoName {
   font-weight: bold;
   background-color: #ddd;
   padding: 1em;
-  flex:1;
-  
-  
- }
+}
 
 .repoDesc {
   padding: 1em;
   background-color: #fefefe;
-  flex:2;
- 
 }
 
 /* Larger screens (laptops and desktops) */
@@ -268,7 +254,6 @@ textarea {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 }
-
 
 /* High-resolution screens (hi-res laptops and desktops) */
 @media (min-width: 1400px) {
