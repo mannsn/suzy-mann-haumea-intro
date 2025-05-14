@@ -217,7 +217,6 @@ fetch("https://api.github.com/users/mannsn/repos")
 
       console.log(respositoryDescription);
 
-      
       respositoryRow.appendChild(respositoryName);
       respositoryRow.appendChild(respositoryDescription);
       project.appendChild(respositoryRow);
@@ -226,4 +225,7 @@ fetch("https://api.github.com/users/mannsn/repos")
   })
   .catch((error) => {
     console.error("An error occurred:", error);
+    const errorMessages = document.getElementById("errorMessages");
+    const message = errorMessages.getElementsByTagName("ul");
+    message.innerText = "An error occurred with retrieving git repositories";
   });

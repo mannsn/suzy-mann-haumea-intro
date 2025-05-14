@@ -152,8 +152,8 @@ ul {
   flex-direction: column;
 }
 
-#skills-section{
-  border-style:solid;
+#skills-section {
+  border-style: solid;
 }
 
 .connect-container {
@@ -174,7 +174,7 @@ ul {
 #messageForm {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
 }
 
 input,
@@ -183,7 +183,7 @@ textarea {
   width: 50%;
   box-sizing: border-box;
   text-align: left;
- }
+}
 
 #removeButtonId {
   display: inline-block;
@@ -195,7 +195,7 @@ textarea {
   padding: 0;
   font-size: small;
   display: grid;
-  grid-template-columns: 22% 22%;
+  grid-template-columns: auto;
   gap: 2%;
 }
 
