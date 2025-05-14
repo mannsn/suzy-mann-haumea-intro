@@ -3,8 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Suzy's first website for Code The Dream
-    Class>
+    <meta
+      name="description"
+      content="Portfolio for Code The Dream Intro Class"
+    />
     <meta name="author" content="Suzy Mann" />
     <title>Suzy's first website</title>
     <link rel="icon" type="image/png" href="img/favicon.png" />
@@ -115,7 +117,7 @@
 
     <section id="projects-section">
       <h2 id="projects">Projects</h2>
-      <ul id=repo-list"></ul>
+      <ul id="repo-list"></ul>
     </section>
 
     <section id="connect-section">
@@ -127,8 +129,12 @@
               href="https://www.linkedin.com/in/suzannenmann/"
               id="linkedinlogo"
             >
-              <img src="img/linkedin-logo-square-300x300.png" alt=""Linked In
-              Logo" id="linkedinlogo">
+              <img
+                src="img/linkedin-logo-square-300x300.png"
+                alt="Linked In
+              Logo"
+                id="linkedinlogoimage"
+              />
             </a>
           </div>
         </div>
@@ -141,7 +147,7 @@
               <img
                 src="img/instagram300.png"
                 alt="Instagram Logo"
-                id="instagramlogo"
+                id="instagramlogoimage"
               />
             </a>
           </div>
@@ -168,8 +174,8 @@
           autocomplete="on"
         /><br />
         <label for="usersMessageId">Users Message: </label>
-        <textarea id="usersMessageId" name="usersMessage" required="true">
-        </textarea>
+        <textarea id="usersMessageId" name="usersMessage" required></textarea>
+
         <br />
         <button type="submit" class="button" name="submitButton">Submit</button>
       </form>
@@ -180,6 +186,10 @@
       <div class="message-container">
         <ul></ul>
       </div>
+    </section>
+
+    <section id="errorMessages">
+      <ul></ul>
     </section>
 
     <script src="js/index.js"></script>
