@@ -197,18 +197,18 @@ fetch("https://api.github.com/users/mannsn/repos")
 
     //Create the respositories list by adding it to the html
     for (let i = 0; i < repositories.length; i++) {
-      var project = document.createElement("LI");
+      const project = document.createElement("LI");
       project.className = "repo-list";
 
-      var respositoryRow = document.createElement("DIV");
+      const respositoryRow = document.createElement("DIV");
       respositoryRow.className = "repoRow";
 
-      var respositoryName = document.createElement("DIV");
+      const respositoryName = document.createElement("DIV");
       respositoryName.className = "repoName";
       respositoryName.innerText = `${repositories[i].name}`;
       console.log(respositoryName);
 
-      var respositoryDescription = document.createElement("DIV");
+      const respositoryDescription = document.createElement("DIV");
       respositoryDescription.className = "repoDesc";
 
       respositoryDescription.innerText = repositories[i].description
