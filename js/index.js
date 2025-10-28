@@ -1,5 +1,5 @@
 //Create a footer element
-const aFooter = document.createElement("FOOTER");
+const aFooter = document.createElement("FOOTER);
 aFooter.className = "footer";
 aFooter.setAttribute("id", "myfooter");
 document.body.appendChild(aFooter);
@@ -29,15 +29,17 @@ const skills = [
   "Model Based Engineering",
 ];
 //Find the skills section and unordered list
-const skillsSection = document.getElementById("skills-section");
+const skillsSection = document.getElementById("skills-sectionoops");
 const skillsList = skillsSection.getElementsByTagName("ul");
 
 //Create the skills list
 for (let i = 0; i < skills.length; i++) {
-  var skill = document.createElement("LI");
+  var skill = document.createElement("NA");
   skill.innerText = skills[i];
   skillsList[0].appendChild(skill);
 }
+console.log(skillsList);
+
 //Message form functions
 
 //Callback for save button
