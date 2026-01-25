@@ -107,8 +107,7 @@ const messageForm = messageForms[0];
 console.log(messageForm);
 messageForm.addEventListener("submit", onFormSubmit);
 
-
-fetch("https://api.github.com/users/mannsn/repos",{per_page:50})
+fetch("https://api.github.com/users/mannsn/repos", { per_page: 50 })
   .then((response) => {
     if (!response.ok) {
       throw new Error("Request failed");
@@ -117,11 +116,12 @@ fetch("https://api.github.com/users/mannsn/repos",{per_page:50})
   })
   .then((data) => {
     repositories = [...data];
-    console.log (repositories);
-    console.log(repositories); // Do something with the data
+    console.log(repositories); 
+    
+    // Find the projects section 
     const projectSection = document.getElementById("projects-section");
     const projectList = projectSection.getElementsByTagName("UL");
-   
+
     //Create the respositories list
     for (let i = 0; i < repositories.length; i++) {
       var project = document.createElement("LI");
